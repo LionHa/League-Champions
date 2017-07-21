@@ -1,12 +1,6 @@
 <div>
   <form (ngSubmit)="onSubmit()" [formGroup]="form">
 
-    <div *ngFor="let question of questions" class="form-row">
-      <df-question *ngIf="question.type === 'metadata'" [question]="question" [form]="form"></df-question>
-      <df-question *ngIf="question.type === 'metadata'" [question]="question" [form]="form"></df-question>
-      <df-question *ngIf="question.type === 'metadata'" [question]="question" [form]="form"></df-question>
-    </div>
-
     <div class="form-row">
       <button type="submit" [disabled]="!form.valid">Save</button>
     </div>
@@ -19,6 +13,11 @@
 
 
 <!--original
+
+    <div *ngFor="let question of questions" class="form-row">
+      <df-question *ngIf="question.type === 'metadata'" [question]="question" [form]="form"></df-question>
+    </div>
+
 
 <div class="meta">
   <div *ngFor="let question of questions" class="form-row">
