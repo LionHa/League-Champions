@@ -40,16 +40,18 @@
 .nav {
   position: absolute;
   top: 15%;
-  width: inherit;
+  width: 410px;
 }
 .nav nav {
   height: 20%;
+  width: inherit;
 }
 nav a {
   display: block;
   height: 75px;
   text-decoration: none;
   text-align: center;
+  vertical-align: middle;
   padding-top: 30px;
   background-color: #606060;
   font-family: beaufortforlol-bold;
