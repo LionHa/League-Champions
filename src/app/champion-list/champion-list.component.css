@@ -1,0 +1,71 @@
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+
+h2 {
+  font-size: 35px;
+  font-family: 'beaufortforlol-bold';
+  color: #F4C559;
+  position: absolute;
+  text-align: center;
+  top: 39%;
+  left: 65px;
+}
+
+.champ-list {
+  position: absolute;
+  top: 47%;
+  height: 562px;
+  width: 20%;
+  box-shadow: 0px 0px 25px 0px black inset;
+}
+.champions {
+  position: absolute;
+  top: 2%;
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.champions li {
+  cursor: pointer;
+  position: relative;
+  left: 10px;
+  background-color: #79b4d1;
+  margin: .5em;
+  padding: .3em 0;
+  height: 75px;
+  width: 360px;
+  border-radius: 50px;
+}
+.champions li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+}
+.champions li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.champions .text {
+  position: relative;
+  top: -3px;
+}
+.champions .icon {
+  display: inline-block;
+  position: relative;
+  left: -1px;
+  top: -4px;
+}
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}

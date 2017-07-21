@@ -1,0 +1,46 @@
+<div>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+
+    <div *ngFor="let question of questions" class="form-row">
+      <df-question *ngIf="question.type === 'metadata'" [question]="question" [form]="form"></df-question>
+      <df-question *ngIf="question.type === 'metadata'" [question]="question" [form]="form"></df-question>
+      <df-question *ngIf="question.type === 'metadata'" [question]="question" [form]="form"></df-question>
+    </div>
+
+    <div class="form-row">
+      <button type="submit" [disabled]="!form.valid">Save</button>
+    </div>
+  </form>
+
+  <div *ngIf="payLoad" class="form-row">
+    <strong>Saved the following values</strong><br>{{payLoad}}
+  </div>
+</div>
+
+
+<!--original
+
+<div class="meta">
+  <div *ngFor="let question of questions" class="form-row">
+    <div *ngIf="question.type === 'metadata'">
+      <df-question [question]="question" [form]="form"></df-question>
+    </div>
+  </div>
+</div>
+
+<div class="ability">
+  <div *ngFor="let question of questions" class="form-row">
+    <div *ngIf="question.type === 'ability'">
+      <df-question [question]="question" [form]="form"></df-question>
+    </div>
+  </div>
+</div>
+
+<div class="attribute">
+  <div *ngFor="let question of questions" class="form-row">
+    <div *ngIf="question.type === 'attribute'">
+      <df-question [question]="question" [form]="form"></df-question>
+    </div>
+  </div>
+</div>
+-->

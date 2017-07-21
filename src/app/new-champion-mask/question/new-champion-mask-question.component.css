@@ -1,0 +1,17 @@
+.warning  {
+  width: 250px;
+  font-size: 16px;
+  border: 1px solid #ff3f3f;
+  border-radius: 5px;
+  background-color: #ff9e9e;
+  margin-bottom: 10px;
+}
+
+.textbox {
+  width: 250px;
+}
+
+.dropdown {
+  width: 250px;
+}
+

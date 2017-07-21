@@ -1,0 +1,55 @@
+<div *ngIf="champion">
+  <div class="champ-profile-wrapper">
+    <div class="champ-header">
+      <div class="champ-info">
+        <span class="champ-name"><h2>{{champion.name}}</h2></span>
+        <span class="champ-title"><h2>{{champion.title}}</h2></span>
+        <div class="champ-triangle"><div class="champ-triangle-border"></div></div>
+      </div>
+      <div class="champ-back" (click)="goBack()">
+        <span class="goback"><h2>GO BACK</h2></span>
+        <div class="back-triangle"><div class="back-triangle-border"></div></div>
+      </div>
+    </div>
+      <div class="champ-profile">
+      <div class="champ-general">
+        <div class="champ-general-text">
+        <p><span>Name: </span>{{champion.name}}</p>
+        <p><span>Title: </span>{{champion.title}}</p>
+        <br>
+        <p><span>Release: </span>{{champion.release}}</p>
+        <p><span>Faction: </span>{{champion.faction}}</p>
+        <p><span>Role(s): </span>{{champion.role}}</p>
+        </div>
+      </div>
+        <div class="champ-abilities">
+          <div class="champ-abilities-text">
+          <h3>Abilties:</h3>
+          <br>
+          <p><span>Passive: </span>{{champion.passive}}</p>
+          <p><span>Ability Q: </span>{{champion.abilityq}}</p>
+          <p><span>Ability W: </span>{{champion.abilityw}}</p>
+          <p><span>Ability E: </span>{{champion.abilitye}}</p>
+          <p><span>Ability R: </span>{{champion.abilityr}}</p>
+          </div>
+        </div>
+    <div class="champ-attributes">
+      <div class="champ-attributes-text">
+      <h3>Attributes:</h3>
+      <p><span>Health: </span>{{champion.health}}</p>
+      <p><span>Health Regen.: </span>{{champion.healthregeneration}}</p>
+      <p><span>Mana: </span>{{champion.mana}}</p>
+      <p><span>Mana Regen.: </span>{{champion.manaregeneration}}</p>
+      <p><span>Attack Range: </span>{{champion.attackrange}}</p>
+      <p><span>Attack Damage: </span>{{champion.attackdamage}}</p>
+      <p><span>Attack Speed: </span>{{champion.attackspeed}}</p>
+      <p><span>Armor: </span>{{champion.armor}}</p>
+      <p><span>Magic Resist.: </span>{{champion.magicresistance}}</p>
+      <p><span>Movement Speed: </span>{{champion.movementspeed}}</p>
+      <br>
+      <p>*Note: These are the attributes you start with level 1.</p>
+      </div>
+    </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,143 @@
+.champ-profile-wrapper {
+  position: absolute;
+  left: 20%;
+  height: 100%;
+  width: 80%;
+  background-color: dimgrey;
+}
+
+.champ-header {
+  position: absolute;
+  top: 5%;
+  width: 99%;
+  height: 35%;
+  background-color: grey;
+  background-image: url("./app/Assets/pictures/Jinx.jpg");
+  border: 7px solid white;
+}
+
+.champ-triangle {
+  position: absolute;
+  left: 410px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 131px 0 0 131px;
+  border-color: transparent transparent transparent #d74285;
+}
+
+.champ-triangle-border {
+  position: inherit;
+  background-color: white;
+  width: 8px;
+  height: 195px;
+  top: -162px;
+  left: -69px;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.champ-info {
+  position: absolute;
+  top: 234px;
+  background-color: #d74286;
+  width: 410px;
+  height: 130px;
+  font-family: beaufortforlol-bold;
+  color: white;
+  border-top: 7px solid white;
+}
+
+.champ-info .champ-name {
+  position: relative;
+  font-size: 40px;
+  left: 25px;
+}
+
+.champ-info .champ-title {
+  position: relative;
+  font-size: 20px;
+  left: 25px;
+}
+
+.back-triangle {
+  position: absolute;
+  left: -81px;
+  border-style: solid;
+  border-width: 0 81px 81px 0;
+  border-color: transparent #d74285 transparent transparent;
+}
+
+.back-triangle-border {
+  position: inherit;
+  background-color: white;
+  width: 8px;
+  height: 124px;
+  top: -22px;
+  left: 36px;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.champ-back {
+  position: absolute;
+  left: 1392px;
+  background-color: #d74286;
+  width: 230px;
+  height: 80px;
+  font-family: beaufortforlol-bold;
+  color: white;
+  border-bottom: 7px solid white;
+  cursor: pointer; cursor: hand;
+}
+
+.champ-back .goback {
+  position: inherit;
+  top: 15px;
+  left: 25px;
+  font-size: 25px;
+}
+
+.champ-profile {
+  position: absolute;
+  background-color: dimgrey;
+  top: 438px;
+  left: 0px;
+  height: 623px;
+  width: 100%;
+  font-family: beaufortforlol-bold;
+  color: white;
+  line-height: 1.5em;
+}
+
+.champ-general, .champ-abilities {
+  position: absolute;
+  height: 312px;
+  width: 900px;
+  box-shadow: 0px 0px 5px 0px black inset;
+}
+
+.champ-general {
+  top: 0px;
+  display: inline-block;
+}
+.champ-abilities {
+  top: 311px;
+  display: inline;
+}
+
+.champ-attributes {
+  position: absolute;
+  display: inline-block;
+  height: 623px;
+  width: 737px;
+  left: 900px;
+  box-shadow: 0px 0px 5px 0px black inset;
+}
+
+.champ-abilities-text, .champ-general-text, .champ-attributes-text {
+  position: inherit;
+  margin: 20px 0 0 20px;
+  font-size: 18px;
+}
