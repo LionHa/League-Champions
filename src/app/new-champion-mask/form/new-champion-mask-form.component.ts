@@ -16,9 +16,12 @@ export class NewChampionMaskDynamic implements OnInit {
   form: FormGroup;
   payLoad = '';
 
-  constructor(private questionControlService: QuestionControlService) {  }
+  constructor(private questionControlService: QuestionControlService) {
+    console.log('constructed', this.questions);
+  }
 
   ngOnInit() {
+    console.log('ngOnInit', this.questions);
     //this.questions = this.questions.filter(quest => quest.type === 'ability');
     //console.log(this.questions);
     //console.log(this.questions.find(quest => quest.key === 'mana'));

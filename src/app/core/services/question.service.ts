@@ -4,16 +4,9 @@ import { DropdownQuestion } from '../../new-champion-mask/question/question-drop
 import { QuestionBase }     from '../../new-champion-mask/question/question-base.interface';
 import { TextboxQuestion }  from '../../new-champion-mask/question/question-textbox.component';
 
-/**
- *
- * @Injectable
- */
 @Injectable()
 export class QuestionService {
-  /**
-   *
-   * @returns {QuestionBase<any>[]}
-   */
+
   getQuestions() {
 
     let questions: QuestionBase<any>[] = [

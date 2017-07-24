@@ -8,7 +8,7 @@ import { QuestionService } from '../../core/services/question.service';
   styleUrls: ['./new-champion-mask-wrapper.component.css'],
   providers:  [QuestionService]
 })
-export class NewChampionMaskDynamicForm {
+export class NewChampionMaskWrapper {
   questions: any[];
 
   constructor(service: QuestionService) {

@@ -10,7 +10,10 @@ import {ChampProfileComponent} from '../champion-profile/champion-profile.compon
 import {ChampionListComponent} from '../champion-list/champion-list.component';
 import {ChampionService} from '../core/services/champion.service';
 import {AppRoutingModule} from './app-routing.module';
-import {NewChampionMaskDynamicForm} from "../new-champion-mask/wrapper/new-champion-mask-wrapper.component";
+import {NewChampionMaskWrapper} from '../new-champion-mask/wrapper/new-champion-mask-wrapper.component';
+import {FormMetaData} from '../new-champion-mask/form/form-input/form-metadata.component';
+import {QuestionService} from '../core/services/question.service';
+import {CreateNewChampionWrapper} from '../champion/create-champion-wrapper/create-champion-wrapper.component';
 
 
 @NgModule({
@@ -18,9 +21,17 @@ import {NewChampionMaskDynamicForm} from "../new-champion-mask/wrapper/new-champ
     BrowserModule, FormsModule, AppRoutingModule, ReactiveFormsModule
   ],
   declarations: [
-    AppComponent, DashboardComponent, NewChampionMaskDynamic, NewChampionMaskDynamicForm, NewChampionMaskDynamicQuestionComponent, ChampProfileComponent, ChampionListComponent
+    AppComponent,
+    DashboardComponent,
+    ChampProfileComponent,
+    ChampionListComponent,
+    NewChampionMaskWrapper,
+    NewChampionMaskDynamicQuestionComponent,
+    NewChampionMaskDynamic,
+    FormMetaData,
+    CreateNewChampionWrapper
   ],
-  providers: [ChampionService],
+  providers: [ChampionService, QuestionService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
