@@ -13,7 +13,9 @@ import {AppRoutingModule} from './app-routing.module';
 import {NewChampionMaskWrapper} from '../new-champion-mask/wrapper/new-champion-mask-wrapper.component';
 import {FormMetaData} from '../new-champion-mask/form/form-input/form-metadata.component';
 import {QuestionService} from '../core/services/question.service';
-import {CreateNewChampionWrapper} from '../champion/create-champion-wrapper/create-champion-wrapper.component';
+import {CreateNewChampionWrapperComponent} from '../champion/create-champion-wrapper/create-champion-wrapper.component';
+import {ChampionMetadataComponent} from '../champion/champion-metadata/champion-metadata.component';
+import {QuestionControlService} from '../core/services/question-control.service';
 
 
 @NgModule({
@@ -29,9 +31,10 @@ import {CreateNewChampionWrapper} from '../champion/create-champion-wrapper/crea
     NewChampionMaskDynamicQuestionComponent,
     NewChampionMaskDynamic,
     FormMetaData,
-    CreateNewChampionWrapper
+    CreateNewChampionWrapperComponent,
+    ChampionMetadataComponent
   ],
-  providers: [ChampionService, QuestionService],
+  providers: [ChampionService, QuestionService, QuestionControlService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

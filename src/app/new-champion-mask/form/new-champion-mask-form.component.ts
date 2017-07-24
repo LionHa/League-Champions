@@ -22,10 +22,10 @@ export class NewChampionMaskDynamic implements OnInit {
 
   ngOnInit() {
     console.log('ngOnInit', this.questions);
-    //this.questions = this.questions.filter(quest => quest.type === 'ability');
+    this.questions = this.questions.filter(quest => quest.type === 'ability');
     //console.log(this.questions);
     //console.log(this.questions.find(quest => quest.key === 'mana'));
-    //this.form = this.questionControlService.toFormGroup(this.questions);
+    this.form = this.questionControlService.toFormGroup(this.questions);
   }
 
   onSubmit() {
