@@ -1,17 +1,35 @@
-<div class="wrapper">
-  <div class="side-menu">
-    <div class="header">
-      <h1>{{title}}</h1>
-      <img src="./app/assets/icons/leagueico.png" alt="leagueico">
-    </div>
-    <div class="nav">
-      <nav>
-        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-        <a routerLink="/champion-list" routerLinkActive="active">Champions</a>
-        <a routerLink="/new-champion-mask-dynamic-form" routerLinkActive="active">New Champion</a>
-        <a routerLink="/create-champion" routerLinkActive="active">Add Champion</a>
-      </nav>
-    </div>
-</div>
+<body>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+    </span>
+  </button>
+
+  <a class="navbar-brand" href="#"><img src="./app/assets/icons/leagueico.png" alt="leagueico"
+                                        class="img-fluid header-icon">{{title}}</a>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/champion-list" routerLinkActive="active">Champions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/new-champion-mask-dynamic-form" routerLinkActive="active">New Champion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/create-champion" routerLinkActive="active">Add Champion</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--Start Main Container-->
+<div class="container">
   <router-outlet></router-outlet>
 </div>
+<!--End Main Container-->
+</body>

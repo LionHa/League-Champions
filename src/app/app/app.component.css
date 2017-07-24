@@ -1,84 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-@font-face { font-family: 'beaufortforlol-bold';
-  src: url('./app/assets/fonts/beaufortforlol-bold.otf'); }
-
-.wrapper {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.header h1 {
-  position: inherit;
-  font-size: 35px;
+@font-face {
   font-family: 'beaufortforlol-bold';
-  color: #F4C559;
-  text-align: center;
-  top: 35%;
-  left: 23%;
-}
-.header img {
-  position: inherit;
-  height: 72px;
-  width: 72px;
-  top: 25%;
-  left: 3%;
+  src: url('./app/assets/fonts/beaufortforlol-bold.otf');
 }
 
-.header {
-  position: absolute;
-  height: 15%;
-  width: inherit;
-  background-color: #606060;
-}
-
-.nav {
-  position: absolute;
-  top: 15%;
-  width: 410px;
-}
-.nav nav {
-  height: 20%;
-  width: inherit;
-}
-nav a {
-  display: block;
-  height: 75px;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 30px;
-  background-color: #606060;
-  font-family: beaufortforlol-bold;
-  font-size: 30px;
-  box-shadow: 0px 0px 20px 0px black inset;
-  border: 1px solid black;
-}
-
-.side-menu h2 {
-  color: white;
-  font-family: beaufortforlol-bold;
-  font-size: 30px;
-}
-nav a:visited, a:link {
-  color: white;
-}
-nav a:hover {
-  color: white;
-  background-color: #666666;
-}
-nav a.active {
-  color: white;
-  background-color: #727272;
-}
-
-.side-menu {
-  height: 100%;
-  width: 410px;
-  background-color: #606060;
+body {
+  padding-top: 5rem;
 }
