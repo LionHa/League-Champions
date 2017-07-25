@@ -1,0 +1,130 @@
+<form (ngSubmit)="onSubmit()" #championForm="ngForm">
+  <div class="row">
+    <!--Start wrapper left side-->
+    <div class="col-md-8">
+      <!--START META DATA CONTAINER--->
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required name="ngModel" [(ngModel)]="model.name">
+        </div>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" required name="ngModel" [(ngModel)]="model.title">
+        </div>
+        <div class="form-group">
+          <label for="release">Release Date</label>
+          <input type="text" class="form-control" id="release" required name="ngModel" [(ngModel)]="model.release">
+        </div>
+        <div class="form-group">
+          <label for="faction">Faction</label>
+          <select class="form-control" id="faction" required name="ngModel" [(ngModel)]="model.faction">
+            <option value="faction">Piltover</option>
+            <option value="faction">Shadow Isles</option>
+            <option value="faction">Ionia</option>
+            <option value="faction">Demacia</option>
+            <option value="faction">Unknown</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="role">Role(s)</label>
+          <input type="text" class="form-control" id="role" required name="ngModel" [(ngModel)]="model.role">
+        </div>
+      </div>
+      <!--END META DATA CONTAINER--->
+
+      <!--START ABILITY CONTAINER--->
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="passive">Passive</label>
+          <input type="text" class="form-control" id="passive" required>
+          <label for="descriptionpassive">Description</label>
+          <input type="text" class="form-control" id="descriptionpassive" required>
+        </div>
+        <div class="form-group">
+          <label for="abilityq">Ability Q</label>
+          <input type="text" class="form-control" id="abilityq" required>
+          <label for="descriptionq">Description</label>
+          <input type="text" class="form-control" id="descriptionq" required>
+        </div>
+        <div class="form-group">
+          <label for="abilityw">Ability W</label>
+          <input type="text" class="form-control" id="abilityw" required>
+          <label for="descriptionw">Description</label>
+          <input type="text" class="form-control" id="descriptionw" required>
+        </div>
+        <div class="form-group">
+          <label for="abilitye">Ability E</label>
+          <input type="text" class="form-control" id="abilitye" required>
+          <label for="descriptione">Description</label>
+          <input type="text" class="form-control" id="descriptione" required>
+        </div>
+        <div class="form-group">
+          <label for="abilityr">Ability R</label>
+          <input type="text" class="form-control" id="abilityr" required>
+          <label for="descriptionr">Description</label>
+          <input type="text" class="form-control" id="descriptionr" required>
+        </div>
+      </div>
+      <!--END ABILITY CONTAINER--->
+    </div>
+    <!--END wrapper left side-->
+
+    <!--Start wrapper right side-->
+    <div class="col-md-4">
+      <!--START Attribute CONTAINER--->
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="health">Health</label>
+          <input type="text" class="form-control" id="health" required name="ngModel" [(ngModel)]="model.health">
+        </div>
+        <div class="form-group">
+          <label for="healthregen">Health Regen.</label>
+          <input type="text" class="form-control" id="healthregen" required name="ngModel"
+                 [(ngModel)]="model.healthregeneration">
+        </div>
+        <div class="form-group">
+          <label for="mana">Mana</label>
+          <input type="text" class="form-control" id="mana" required name="ngModel" [(ngModel)]="model.mana">
+        </div>
+        <div class="form-group">
+          <label for="manaregen">Mana Regen.</label>
+          <input type="text" class="form-control" id="manaregen" required name="ngModel"
+                 [(ngModel)]="model.manaregeneration">
+        </div>
+        <div class="form-group">
+          <label for="attackrange">Attack Range</label>
+          <input type="text" class="form-control" id="attackrange" required name="ngModel"
+                 [(ngModel)]="model.attackrange">
+        </div>
+        <div class="form-group">
+          <label for="attackdamage">Attack Damage</label>
+          <input type="text" class="form-control" id="attackdamage" required name="ngModel"
+                 [(ngModel)]="model.attackdamage">
+        </div>
+        <div class="form-group">
+          <label for="attackspeed">Attack Speed</label>
+          <input type="text" class="form-control" id="attackspeed" required name="ngModel"
+                 [(ngModel)]="model.attackspeed">
+        </div>
+        <div class="form-group">
+          <label for="armor">Armor</label>
+          <input type="text" class="form-control" id="armor" required name="ngModel" [(ngModel)]="model.armor">
+        </div>
+        <div class="form-group">
+          <label for="magicresist">Magic Resist.</label>
+          <input type="text" class="form-control" id="magicresist" required name="ngModel"
+                 [(ngModel)]="model.magicresist">
+        </div>
+        <div class="form-group">
+          <label for="movementspeed">Movement Speed</label>
+          <input type="text" class="form-control" id="movementspeed" required name="ngModel"
+                 [(ngModel)]="model.movementspeed">
+        </div>
+      </div>
+      <!--END ATTRIBUTE CONTAINER--->
+      <button type="submit" class="btn btn-success" [disabled]="!championForm.form.valid">Submit</button>
+    </div>
+    <!--End wrapper right side-->
+  </div>
+</form>
