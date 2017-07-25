@@ -6,5 +6,9 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  /**
+   * Sets the title which is shown in the navigation bar
+   * @type {string}
+   */
   title = 'League Champions';
 }

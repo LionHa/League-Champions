@@ -1,6 +1,8 @@
-import {Champion} from './champion-base.interface';
+import {Champion} from '../interface/champion-base.interface';
 
-
+/**
+ * Mock data for champions
+ */
 export const CHAMPIONS: Champion[] = [
   {
     id: 1,
@@ -11,10 +13,10 @@ export const CHAMPIONS: Champion[] = [
     release: 2013.10,
     passive: 'Get Excited!',
     abilities: [
-      {shortcut: "q", name: "Switcheroo", description: "blabla", maxlevel: 5},
-      {shortcut: "w", name: "Zap", description: "blabla", maxlevel: 5},
-      {shortcut: "e", name: "Flame Chompers", description: "blabla", maxlevel: 5},
-      {shortcut: "r", name: "Super Mega Death Rocket", description: "blabla", maxlevel: 3},
+      {shortcut: 'q', name: 'Switcheroo', description: 'blabla', maxlevel: 5},
+      {shortcut: 'w', name: 'Zap', description: 'blabla', maxlevel: 5},
+      {shortcut: 'e', name: 'Flame Chompers', description: 'blabla', maxlevel: 5},
+      {shortcut: 'r', name: 'Super Mega Death Rocket', description: 'blabla', maxlevel: 3},
     ],
     health: 518,
     healthregeneration: 6.97,
@@ -36,10 +38,10 @@ export const CHAMPIONS: Champion[] = [
     release: 2011.12,
     passive: 'Essence Theft',
     abilities: [
-      {shortcut: "q", name: "Switcheroo", description: "blabla", maxlevel: 5},
-      {shortcut: "w", name: "Zap", description: "blabla", maxlevel: 5},
-      {shortcut: "e", name: "Flame Chompers", description: "blabla", maxlevel: 5},
-      {shortcut: "r", name: "Super Mega Death Rocket", description: "blabla", maxlevel: 3},
+      {shortcut: 'q', name: 'Switcheroo', description: 'blabla', maxlevel: 5},
+      {shortcut: 'w', name: 'Zap', description: 'blabla', maxlevel: 5},
+      {shortcut: 'e', name: 'Flame Chompers', description: 'blabla', maxlevel: 5},
+      {shortcut: 'r', name: 'Super Mega Death Rocket', description: 'blabla', maxlevel: 3},
     ],
     health: 514,
     healthregeneration: 6.508,
@@ -61,10 +63,10 @@ export const CHAMPIONS: Champion[] = [
     release: 2013.01,
     passive: 'Damnation',
     abilities: [
-      {shortcut: "q", name: "Death Sentence", description: "blabla", maxlevel: 5},
-      {shortcut: "w", name: "Dark Passage", description: "blabla", maxlevel: 5},
-      {shortcut: "e", name: "Flay", description: "blabla", maxlevel: 5},
-      {shortcut: "r", name: "The Box", description: "blabla", maxlevel: 3},
+      {shortcut: 'q', name: 'Death Sentence', description: 'blabla', maxlevel: 5},
+      {shortcut: 'w', name: 'Dark Passage', description: 'blabla', maxlevel: 5},
+      {shortcut: 'e', name: 'Flay', description: 'blabla', maxlevel: 5},
+      {shortcut: 'r', name: 'The Box', description: 'blabla', maxlevel: 3},
     ],
     health: 561,
     healthregeneration: 6.92,
@@ -86,10 +88,10 @@ export const CHAMPIONS: Champion[] = [
     release: 2015.07,
     passive: 'An Acquired Taste',
     abilities: [
-      {shortcut: "q", name: "Tongue Lash", description: "blabla", maxlevel: 5},
-      {shortcut: "w", name: "Devour", description: "blabla", maxlevel: 5},
-      {shortcut: "e", name: "Thick Skin", description: "blabla", maxlevel: 5},
-      {shortcut: "r", name: "Abyssal Voyage", description: "blabla", maxlevel: 3},
+      {shortcut: 'q', name: 'Tongue Lash', description: 'blabla', maxlevel: 5},
+      {shortcut: 'w', name: 'Devour', description: 'blabla', maxlevel: 5},
+      {shortcut: 'e', name: 'Thick Skin', description: 'blabla', maxlevel: 5},
+      {shortcut: 'r', name: 'Abyssal Voyage', description: 'blabla', maxlevel: 3},
     ],
     health: 610,
     healthregeneration: 6.5,
@@ -111,10 +113,10 @@ export const CHAMPIONS: Champion[] = [
     release: 2011.06,
     passive: 'Clockwork Windup',
     abilities: [
-      {shortcut: "q", name: "Command Attack", description: "blabla", maxlevel: 5},
-      {shortcut: "w", name: "Command Dissonance", description: "blabla", maxlevel: 5},
-      {shortcut: "e", name: "Command Protect", description: "blabla", maxlevel: 5},
-      {shortcut: "r", name: "Command Shockwave", description: "blabla", maxlevel: 3},
+      {shortcut: 'q', name: 'Command Attack', description: 'blabla', maxlevel: 5},
+      {shortcut: 'w', name: 'Command Dissonance', description: 'blabla', maxlevel: 5},
+      {shortcut: 'e', name: 'Command Protect', description: 'blabla', maxlevel: 5},
+      {shortcut: 'r', name: 'Command Shockwave', description: 'blabla', maxlevel: 3},
     ],
     health: 518,
     healthregeneration: 6.87,

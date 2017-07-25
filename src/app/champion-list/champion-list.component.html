@@ -1,11 +1,16 @@
 <h2>Champions - Liste</h2>
+<!--CHAMP LIST WRAPPER BEGINN-->
 <div class="champ-list">
-<ul class="champions">
-  <li *ngFor="let champ of champions"
-      [class.selected]="champ === selectedChamp"
-      (click)="onSelect(champ); gotoProfile(selectedChamp)">
-    <div class="icon"></div> {{champ.name}}
-  </li>
-</ul>
+  <ul class="champions">
+    <!--CHAMP LIST BEGINN-->
+    <li *ngFor="let champ of champions"
+        [class.selected]="champ === selectedChamp"
+        (click)="onSelect(champ); gotoProfile(selectedChamp)">
+      <div class="icon"></div>
+      {{champ.name}}
+    </li>
+    <!--CHAMP LIST END-->
+  </ul>
 </div>
+<!--CHAMP LIST WRAPPER END-->
 

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'beaufortforlol-bold';
-  src: url('./app/assets/fonts/beaufortforlol-bold.otf');
+  src: url('../assets/fonts/beaufortforlol-bold.otf');
 }
 
 body {

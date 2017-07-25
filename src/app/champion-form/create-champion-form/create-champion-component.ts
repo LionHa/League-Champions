@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Champion} from '../../core/champion-base.interface';
+import {Champion} from '../../core/interface/champion-base.interface';
 
 @Component({
   selector: 'create-champion-form',
