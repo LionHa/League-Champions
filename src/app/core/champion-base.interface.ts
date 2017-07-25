@@ -14,7 +14,7 @@ export class Champion {
   mana: number;
   manaregeneration: number;
   attackrange: number;
-  attackdamag: number;
+  attackdamage: number;
   attackspeed: number;
   armor: number;
   magicresist: number;
